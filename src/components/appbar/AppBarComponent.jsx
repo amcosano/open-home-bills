@@ -1,6 +1,7 @@
 import { Box, Paper, Typography } from '@mui/material'
+import PropTypes from 'prop-types'
 
-const AppBarComponent = () => {
+const AppBarComponent = ({ title }) => {
   return (
     <Box
       sx={{
@@ -12,11 +13,15 @@ const AppBarComponent = () => {
       }}
     >
       <Typography variant='h4' sx={{ color: '#e8eaf6' }}>
-        Open Home Bills
+        {title}
       </Typography>
       <Paper />
     </Box>
   )
+}
+
+AppBarComponent.propTypes = {
+  title: PropTypes.string,
 }
 
 export default AppBarComponent

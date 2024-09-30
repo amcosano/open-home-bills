@@ -3,7 +3,7 @@ import AppBarComponent from './components/appbar/AppBarComponent'
 const App = () => {
   return (
     <>
-      <AppBarComponent />
+      <AppBarComponent title={'Open Home Bills'} />
     </>
   )
 }
